@@ -9,7 +9,6 @@ class PepParsePipeline:
     def open_spider(self, spider):
         self.count_status = defaultdict(int)
 
-
     def process_item(self, item, spider):
         if 'status' in item:
             self.count_status[item['status']] += 1
@@ -29,5 +28,3 @@ class PepParsePipeline:
                 *sorted(self.count_status.items()),
                 ['Total', sum(self.count_status.values())]
             ])
-
-
