@@ -16,3 +16,8 @@ git clone git@github.com:AnnPovor/scrapy_parser_pep.git
 ```python
 pip install -r requirements.txt
 ```
+### Парсер запускается командой:
+```python
+scrapy crawl pep
+```
+#### После чего в папке results/ появятся два csv-файла.
